@@ -1,4 +1,4 @@
-# XAMPP Projects Viewer version 1.0.0
+# XAMPP Projects Viewer version 1.0.1
 
 ## Description
 
