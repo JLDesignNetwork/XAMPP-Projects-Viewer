@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects Home</title>
+        <style>
+            *:not(h1):not(h2):not(h3) {
+                font: 12px/100% monospace;
+            }
+            body {
+                background-color: rgba(10,10,10,0.4);
+            }
+            pre {
+                white-space: pre-wrap;
+                margin: 0.5em;
+                padding: 5px;
+            }
+            div#projects {
+                overflow: auto;
+                width: 80vw;
+                margin: 0 auto;
+                padding: 0 5em 2.5em 5em;
+            }
+            div#projects_table {
+                border: 1px solid #bbb;
+                border-radius: 8px;
+                background-color: #7400B8;
+                text-align: center;
+                box-shadow: 0 0 7px 4px rgba(0,0,0,0.6);
+                color: #fff;
+                width: 100%;
+                display: grid;
+                gap: 0;
+                grid-template-columns: 30% repeat(3, 20%) 10%;
+                grid-template-rows: 1fr;
+            }
+            div#projects_table > div {
+                padding: 8px;
+                color: #000;
+                border-bottom: 1px solid #bbb;
+                border-right: 1px solid #bbb;
+            }
+            div#projects_table > div:not(.heading) {
+                background-color: #56cfe1 !important;
+            }
+            div#projects_table > div.heading {
+                font-size: 16px;
+                font-variant: small-caps;
+                color: #fff;
+            }
+
+            /* border fix */
+            div#projects_table > div:nth-last-child(-n+5) {
+                border-bottom: 0 !important;
+            }
+            div#projects_table > div:nth-of-type(5n) {
+                border-right: 0 !important;
+            }
+            /* border-radius fix */
+            div#projects_table > div:last-child {
+                border-bottom-right-radius: 8px;
+            }
+            div#projects_table > div:nth-last-child(5) {
+                border-bottom-left-radius: 8px;
+            }
+
+            /* alternating row color */
+            div#projects_table > div:nth-child(10n+1):not(.heading),
+            div#projects_table > div:nth-child(10n+2):not(.heading),
+            div#projects_table > div:nth-child(10n+3):not(.heading),
+            div#projects_table > div:nth-child(10n+4):not(.heading),
+            div#projects_table > div:nth-child(10n+5):not(.heading) {
+                background-color: #80ffdb !important;
+            }
+            h1 {
+                text-align: center;
+                color: #ddd;
+                font-size: 2.5em;
+                font-variant: small-caps;
+                text-shadow:
+                    3px 3px 0 #000,
+                  -1px -1px 0 #000,  
+                   1px -1px 0 #000,
+                   -1px 1px 0 #000,
+                    1px 1px 0 #000;
+            }
+            a {
+                color: inherit;                
+            }
+            a, a:active, a:visited {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                text-shadow: 0 0 4px #bbb;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="projects">
+            <h1>Projects</h1>
+            <div id="projects_table">
+                <div class="heading">Project Name</div>
+                <div class="heading">Changed on</div>
+                <div class="heading">Modified on</div>
+                <div class="heading">Accessed on</div>
+                <div class="heading">Size</div>
+                {% PROJECTS %}
+            </div>
+        </div>
+    </body>
+</html>
