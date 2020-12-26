@@ -69,19 +69,30 @@ $navigation = new Navigation($contents);
  */
 $projectHTML = "";
 foreach($contents[1] as $projectName => $stats) :
+    $size = $stats['size'];
+    $factor = floor((strlen($size) - 1) / 3);
+    
+    if ($factor > 0) :
+        $sz = 'KMGT';
+    endif;
+
     $projectHTML .= $output->prepare(
         [
             $navigation->linkIt($projectName),
-            date("Y-m-d", $stats[2]),
-            date("Y-m-d", $stats[1]),
-            date("Y-m-d", $stats[0]),
-            $stats[3]
+            date("Y-m-d", $stats['ctime']),
+            date("Y-m-d", $stats['mtime']),
+            date("Y-m-d", $stats['atime']),
+            sprintf(
+                "%.0f", 
+                $size / pow(1024, $factor)
+            ) . @$sz[$factor - 1] . ' bytes'
         ],
         "<div>%s</div>
         <div>%s</div>
         <div>%s</div>
         <div>%s</div>
-        <div>%dkb</div>"
+        <div>%s</div>",
+        false
     );
 endforeach;
 
