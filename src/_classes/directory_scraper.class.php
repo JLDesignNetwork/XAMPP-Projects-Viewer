@@ -78,7 +78,9 @@ class DirectoryScraper
      */
     public function __construct(string $path)
     {        
-        /* Prepare the parameter $path for use */
+        /* 
+         * Prepare the parameter $path for use 
+         */
         if(!$this->_preparePath($path)) :
             return false;
         endif;
