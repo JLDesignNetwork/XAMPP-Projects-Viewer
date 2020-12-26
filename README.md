@@ -4,6 +4,8 @@
 
 Software application for use with XAMPP localhost software. This software application will display an HTML formatted list of all projects that exist on your XAMPP localhost server.
 
+![XPV](/xpv.png?raw=true "Default view.")
+
 ## Features
 
 * Colorful display
