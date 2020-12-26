@@ -1,0 +1,18 @@
+{
+    "projects_path": ".",
+    "scraper_excludes": [
+        ".",
+        "..",
+        ".vscode",
+        "_templates",
+        "_classes",
+        ".DS_Store"
+    ],
+    "class_path": "_classes",
+    "template_path": "_templates",
+    "default_timezone": "Europe/Rome",
+    "error_log_file_path": ".",
+    "error_log_file": "error.log",
+    "global_debugging": true,
+    "error_report_level": "E_ALL"
+}
