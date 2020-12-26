@@ -27,3 +27,7 @@ This script was built using PHP 8.0.1. There exists PHP elements that will not w
 ## Todo
 
 - [ ] Create a template class and additional templates for customizable display.
+- [ ] Add "Create Project" feature
+- [ ] Add "Delete Project" feature
+- [ ] Add "php_info()" feature
+- [ ] Add mysql connection test
