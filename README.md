@@ -1,5 +1,12 @@
 # XAMPP Projects Viewer version 1.0.1
 
+[![GitHub issues](https://img.shields.io/github/issues/JLDesignNetwork/XAMPP-Projects-Viewer?style=for-the-badge)](https://github.com/JLDesignNetwork/XAMPP-Projects-Viewer/issues)
+[![GitHub forks](https://img.shields.io/github/forks/JLDesignNetwork/XAMPP-Projects-Viewer?style=for-the-badge)](https://github.com/JLDesignNetwork/XAMPP-Projects-Viewer/network)
+[![GitHub stars](https://img.shields.io/github/stars/JLDesignNetwork/XAMPP-Projects-Viewer?style=for-the-badge)](https://github.com/JLDesignNetwork/XAMPP-Projects-Viewer/stargazers)
+[![GitHub license](https://img.shields.io/github/license/JLDesignNetwork/XAMPP-Projects-Viewer?style=for-the-badge)](https://github.com/JLDesignNetwork/XAMPP-Projects-Viewer/blob/master/LICENSE.txt)
+![GitHub repo size](https://img.shields.io/github/repo-size/JLDesignNetwork/XAMPP-Projects-Viewer?style=for-the-badge)
+![GitHub all releases](https://img.shields.io/github/downloads/JLDesignNetwork/XAMPP-Projects-Viewer/total?style=for-the-badge)
+
 ## Description
 
 Software application for use with XAMPP localhost software. This software application will display an HTML formatted list of all projects that exist on your XAMPP localhost server.
