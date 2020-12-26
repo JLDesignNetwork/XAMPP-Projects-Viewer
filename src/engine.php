@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Behind-the-scenes script of XPV.
  *
