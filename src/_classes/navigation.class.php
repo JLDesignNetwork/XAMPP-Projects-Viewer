@@ -1,14 +1,10 @@
 <?php
 
 /**
- * Short Description: Class for preparing output
+ * Class for creating project links
  *
- * Long Description: Output class takes the parameters $format,
- * $message, and $linebreak to build an output string.
- * $message can be either a string or an array. The output prepare
- * method will consider the $message input and determine the 
- * appropriate algorithm for output, using the supplied format.
- *
+ * Class takes input and returns a link
+ * 
  * PHP version 8.0.1
  *
  * LICENSE: MIT License
@@ -48,8 +44,8 @@
 /**
  * Navigation Class
  * 
- * @category Description
- * @package  Category
+ * @category Category
+ * @package  XAMPP-Project_Viewer
  * @author   Jeff Langdon <admin@jldn.org>
  * @license  http://www.opensource.org/licenses/mit-license.html  MIT License
  * @link     http://url.com
@@ -57,7 +53,7 @@
 class Navigation
 {
     /**
-     * Undocumented variable
+     * Class properties
      *
      * @var array  $_files
      * @var array  $_folders
@@ -68,7 +64,7 @@ class Navigation
     private string $_path;
 
     /**
-     * Undocumented function
+     * Class constructor method
      *
      * @param array $args Index array containing path, files and folders
      */
@@ -78,9 +74,9 @@ class Navigation
     }
 
     /**
-     * Undocumented function
+     * Method to create links
      *
-     * @param string $item Comment
+     * @param string $item The item to create a link for.
      *
      * @return string
      */
@@ -100,9 +96,9 @@ class Navigation
     }
 
     /**
-     * Undocumented function
+     * Private method used for output inclusion
      *
-     * @param int $what Comment
+     * @param int $what Argument used to determine what to include.
      *
      * @return mixed
      */
@@ -131,9 +127,9 @@ class Navigation
     }
 
     /**
-     * Undocumented function
+     * Method used to output data.
      *
-     * @param int $what comment
+     * @param int $what Argument to determine what to output.
      *
      * @return void
      */
