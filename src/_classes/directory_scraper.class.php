@@ -44,6 +44,13 @@
  * @datetime  2020-12-23 19:02:41
  */
 
+/* 
+ * Security check 
+ */
+if (!defined('THIS_PAGE') || defined('THIS_PAGE') && THIS_PAGE != 'index') :
+    exit("Direct access not permitted.");    
+endif;
+
 /**
  * DirectoryScraper Class
  *

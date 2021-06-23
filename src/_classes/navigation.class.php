@@ -41,6 +41,13 @@
  * @datetime  2020-12-23 19:32:04
  */
 
+/* 
+ * Security check 
+ */
+if (!defined('THIS_PAGE') || defined('THIS_PAGE') && THIS_PAGE != 'index') :
+    exit("Direct access not permitted.");    
+endif;
+
 /**
  * Navigation Class
  * 
